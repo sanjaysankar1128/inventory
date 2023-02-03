@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "productName": "milbikies",
+      "category": "Snacks",
+      "Productquantity": "23",
+      "Productprice": "10",
+      "id": 3
+    },
+    {
+      "productName": "bakes",
+      "category": "Snacks",
+      "Productquantity": "20",
+      "Productprice": "20",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "productName": "cakes",
+      "category": "Snacks",
+      "Productquantity": "20",
+      "Productprice": "40"
+    },
+    {
+      "id": 6,
+      "productName": "choclotes",
+      "category": "Snacks",
+      "Productquantity": "20",
+      "Productprice": "40"
+    },
+    {
+      "productName": "maaza",
+      "category": "Cool Drinks",
+      "Productquantity": "12",
+      "Productprice": "45",
+      "id": 7
+    },
+    {
+      "productName": "sprite",
+      "category": "Cool Drinks",
+      "Productquantity": "15",
+      "Productprice": "37",
+      "id": 8
+    },
+    {
+      "productName": "Tomato",
+      "category": "Vegtables",
+      "Productquantity": 20,
+      "Productprice": 35,
+      "id": 9
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

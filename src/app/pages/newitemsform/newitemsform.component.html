@@ -1,0 +1,77 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="inventoryForm">
+    <section class="mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0">
+                            <div class="col-xl-6 d-none d-xl-block">
+                                <img src="/assets/Image.jpeg" alt="Sample photo" class="img-fluid"
+                                    style="height: 450px ;width:650px;" />
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card-body p-md-5 text-black">
+                                    <h3 class="mb-5 text-uppercase">Food Inventory</h3>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" class="form-control form-control-lg"
+                                                    formControlName="productName" [(ngModel)]="productsobj.productName"
+                                                    placeholder="product Name"
+                                                    [ngClass]="{ 'border-danger &&is-invalid': Submitted && f['productName'].errors || f['productName'].touched&& f['productName'].errors}">
+                                                <span class="error"
+                                                    *ngIf="Submitted &&f['productName'].errors||f['productName'].touched&& f['productName'].errors"
+                                                    class="error">Product Name is required
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4">
+                                            <select class="form-select form-select-lg" formControlName="category"
+                                                [(ngModel)]="productsobj.category" placeholder="Category">
+                                                <option value="">Category
+                                                </option>
+                                                <option value="Snacks">Snacks
+                                                </option>
+                                                <option value="Cool Drinks">Cool Drinks
+                                                </option>
+                                                <option value="Vegtables">Vegtables
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="number" [(ngModel)]="productsobj.Productquantity"
+                                                    formControlName="Productquantity"
+                                                    class="form-control form-control-lg"
+                                                    placeholder="Product Quantity" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="number" formControlName="Productprice"
+                                                    [(ngModel)]="productsobj.Productprice"
+                                                    class="form-control form-control-lg" placeholder="Product Price" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end pt-3">
+                                        <button type="reset" class="btn btn-light btn-lg">Reset all</button>
+                                        <button type="submit" class="btn btn-warning btn-lg ms-2">Submit</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
