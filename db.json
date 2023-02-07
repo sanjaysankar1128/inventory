@@ -3,7 +3,7 @@
     {
       "productName": "milbikies",
       "category": "Snacks",
-      "Productquantity": "23",
+      "Productquantity": 27,
       "Productprice": "10",
       "id": 3
     },
@@ -48,6 +48,13 @@
       "Productquantity": 20,
       "Productprice": 35,
       "id": 9
+    },
+    {
+      "productName": "bakes",
+      "category": "Snacks",
+      "Productquantity": 12,
+      "Productprice": 20,
+      "id": 10
     }
   ],
   "comments": [],

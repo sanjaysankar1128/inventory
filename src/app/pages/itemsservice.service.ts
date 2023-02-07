@@ -5,7 +5,7 @@ import { map } from 'rxjs';
   providedIn: 'root'
 })
 export class ItemsserviceService {
-  private URL ="http://localhost:3000/posts"
+  private URL = "http://localhost:3000/posts"
   constructor(private http: HttpClient) { }
   getproductlist() {
     return this.http.get<any>(this.URL).pipe(map((res: any) => {
@@ -18,17 +18,17 @@ export class ItemsserviceService {
     }))
   }
   updateproduct(data: any, id: any) {
-    return this.http.put<any>(this.URL + id, data).pipe(map((res: any) => {
+    return this.http.put<any>(this.URL +'/'+ id, data).pipe(map((res: any) => {
       return res;
     }))
   }
   deleteproduct(id: number) {
-    return this.http.delete<any>(this.URL + id).pipe(map((res: any) => {
+    return this.http.delete<any>(this.URL +'/'+ id).pipe(map((res: any) => {
       return res;
     }))
   }
   getidproduct(id: any) {
-    return this.http.get<any>(this.URL + id).pipe(map((res: any) => {
+    return this.http.get<any>(this.URL +'/'+ id).pipe(map((res: any) => {
       return res;
     }))
   }

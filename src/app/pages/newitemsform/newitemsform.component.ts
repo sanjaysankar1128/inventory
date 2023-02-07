@@ -13,9 +13,9 @@ export class NewitemsformComponent {
   inventoryForm!: FormGroup;
   Submitted = false;
   productobj: listitems = new listitems();
-  productsobj: any = {}
+  productsobj: any = {};
   paramid: any;
-  editdata: any
+  editdata: any;
   constructor(private fb: FormBuilder,
     private service: ItemsserviceService,
     private route: ActivatedRoute,
